@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yargy-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/yargy-{{ version }}.tar.gz
   sha256: c917eefb32a40c23c46b6ca88d68927072dd00ab94e90fd5dc6ab0a62b59b593
 
 build:
   skip: true  # [win]
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
